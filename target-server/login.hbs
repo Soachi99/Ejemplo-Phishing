@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+ 
+  <title> Pagina Principal </title>
+</head>
+
+<body>
+
+  <div class="Titulo">
+    <h1 class="text-center mt-5">Bienvenido al Banco BBB</h1>
+    <h2 class="text-center">Por favor llene sus credenciales a continuación</h2>
+
+  </div>
+
+  <div class="formulario d-block mx-auto mt-5 " style="max-width: 500px;">
+    <form action="/" method="POST" >
+    <div class="mb-3">
+      <label for="email" class="form-label">Correo electronico</label>
+      <input name="email" class="form-control" type="email" id="email" placeholder="Email">
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Contraseña</label>
+      <input name="password" class="form-control" type="password" id="password" placeholder="Contraseña">
+    </div>      
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+</body>
+
+</html>
