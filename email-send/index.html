@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>Simulación atacante</title>
+</head>
+
+<body>
+    <div>
+        <h1>
+            Simulación sitio similar al del banco BBB
+        </h1>
+    </div>
+    <script>
+
+        var contentHtml = ` <h1> Banco BBB </h1>
+        <p> Cordial saludo <br> El día de hoy se presentó actividad sospechosa en el inicio de sesión 
+            de su cuenta en nuestras plataformas, esto puede deberse a un inicio de sesión en otro dispositivo
+             o que alguien quiera entrar a su cuenta. Por tanto, necesitamos que confirme sus credenciales en el link adjunto en este correo. <br> </p>
+             
+             <a href="https://simulacionataque.000webhostapp.com/">www.bancoBBB.com/confirm</a>
+
+             <p> Muchas gracias </p>
+
+             `
+
+        Email.send({
+            Host: "smtp.gmail.com",
+            Username: "cartoonpyf@gmail.com",
+            Password: "cartoonpizza",
+            From: "cartoonpyf@gmail.com",
+            To: ["adriana.ar886@gmail.com","jupaim99@gmail.com"],
+            Subject: "ALERTA ACTIVIDAD SOSPECHOSA - BANCO BBB",
+            Body: contentHtml
+        })
+    </script>
+</body>
+
+</html>
